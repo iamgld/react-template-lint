@@ -175,24 +175,24 @@
 }
 
 // Extract a color from the color palette
-@function Palette($color) {
-	@return map-get(setting.$Palette, $color);
+@function palette($color) {
+	@return map-get(setting.$palette, $color);
 }
 // Extract a fontsize from the textsize palette
-@function Textsize($size) {
-	@return map-get(setting.$Textsize, $size);
+@function textsize($size) {
+	@return map-get(setting.$textsize, $size);
 }
 // Extract a Z-Index value
-@function Zindex($zindex) {
-	@return map-get(setting.$Zindexs, $zindex);
+@function zindex($zindex) {
+	@return map-get(setting.$zindexs, $zindex);
 }
 // Extract a Spacing value
-@function Spacing($Space) {
-	@return map-get(setting.$Spacing, $Space);
+@function spacing($space) {
+	@return map-get(setting.$spacing, $space);
 }
 // Extract a Shadow value
-@function Shadow($Shadow) {
-	@return map-get(setting.$Shadows, $Shadow);
+@function shadow($shadow) {
+	@return map-get(setting.$shadows, $shadow);
 }
 
 // Styles of Scroll Bar on Chrome, Edge y Safari.
@@ -202,63 +202,63 @@
 		width: 8px;
 	}
 	&::-webkit-scrollbar-track {
-		background-color: Palette(Primary); // color of the tracking area
+		background-color: palette(Primary); // color of the tracking area
 	}
 	&::-webkit-scrollbar-thumb {
-		background-color: Palette(Accent); // color of the scroll thumb
+		background-color: palette(Accent); // color of the scroll thumb
 		// border-radius: setting.$Rounded; // roundness of the scroll thumb
-		// border: 2px solid Palette(Primary); // creates padding around scroll thumb
+		// border: 2px solid palette(Primary); // creates padding around scroll thumb
 	}
 	// Firefox
 	overflow: auto;
 	scrollbar-width: thin;
 	// color of the scroll thumb, color of the tracking area
-	scrollbar-color: Palette(Accent) Palette(Primary);
+	scrollbar-color: palette(Accent) palette(Primary);
 }
 
 // Define a source size that was used in each breakpoint
-@mixin TextsizeHeadingOne() {
-	font-family: setting.$Roboto;
-	font-size: setting.$TextsizeHeadingThree;
+@mixin textsizeHeadingOne() {
+	font-family: setting.$roboto;
+	font-size: setting.$textsizeHeadingThree;
 	@include From(tb) {
-		font-size: setting.$TextsizeHeadingTwo;
+		font-size: setting.$textsizeHeadingTwo;
 	}
 	@include From(dt) {
-		font-size: setting.$TextsizeHeadingOne;
+		font-size: setting.$textsizeHeadingOne;
 	}
 }
-@mixin TextsizeHeadingTwo() {
-	font-family: setting.$Roboto;
-	font-size: setting.$TextsizeNormal;
+@mixin textsizeHeadingTwo() {
+	font-family: setting.$roboto;
+	font-size: setting.$textsizeNormal;
 	@include From(tb) {
-		font-size: setting.$TextsizeHeadingThree;
+		font-size: setting.$textsizeHeadingThree;
 	}
 	@include From(dt) {
-		font-size: setting.$TextsizeHeadingTwo;
-	}
-}
-@mixin TextsizeHeadingThree() {
-	font-family: setting.$Roboto;
-	font-size: setting.$TextsizeNormal;
-	@include From(dt) {
-		font-size: setting.$TextsizeHeadingThree;
+		font-size: setting.$textsizeHeadingTwo;
 	}
 }
-@mixin TextsizeNormal() {
-	font-family: setting.$Roboto;
-	font-size: setting.$TextsizeSmallOne;
+@mixin textsizeHeadingThree() {
+	font-family: setting.$roboto;
+	font-size: setting.$textsizeNormal;
 	@include From(dt) {
-		font-size: setting.$TextsizeNormal;
+		font-size: setting.$textsizeHeadingThree;
 	}
 }
-@mixin TextsizeSmallOne() {
-	font-family: setting.$Roboto;
-	font-size: setting.$TextsizeSmallTwo;
+@mixin textsizeNormal() {
+	font-family: setting.$roboto;
+	font-size: setting.$textsizeSmallOne;
 	@include From(dt) {
-		font-size: setting.$TextsizeSmallOne;
+		font-size: setting.$textsizeNormal;
+	}
+}
+@mixin textsizeSmallOne() {
+	font-family: setting.$roboto;
+	font-size: setting.$textsizeSmallTwo;
+	@include From(dt) {
+		font-size: setting.$textsizeSmallOne;
 	}
 }
 @mixin TextsizeSmallTwo() {
-	font-family: setting.$Roboto;
-	font-size: setting.$TextsizeSmallTwo;
+	font-family: setting.$roboto;
+	font-size: setting.$textsizeSmallTwo;
 }

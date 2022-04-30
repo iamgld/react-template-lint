@@ -3,7 +3,7 @@
 .drawer {
 	&,
 	&__paper {
-		width: styles.$SidenavWidth;
+		width: styles.$sidenavWidth;
 	}
 
 	&__drawer {
@@ -11,6 +11,6 @@
 	}
 
 	&__header {
-		height: styles.$NavbarHeight;
+		height: styles.$navbarHeight;
 	}
 }

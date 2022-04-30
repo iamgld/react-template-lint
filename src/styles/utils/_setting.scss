@@ -8,7 +8,7 @@
 */
 
 // Size breakpoints
-$Breakpoints: (
+$breakpoints: (
 	// zero
 	ZR: 0,
 	// mobile
@@ -23,53 +23,53 @@ $Breakpoints: (
 	XD: 1280px
 );
 // Fontsize
-$Fontsize: 14px;
+$fontsize: 14px;
 // Fonts configuration
-$Ratio: 1.25; // ratio
-$TextsizeNormal: $Fontsize; // normal size, 16px
-$TextsizeHeadingThree: $TextsizeNormal * $Ratio; // heading 3, 20px
-$TextsizeHeadingTwo: $TextsizeHeadingThree * $Ratio; // heading 2, 25px
-$TextsizeHeadingOne: $TextsizeHeadingTwo * $Ratio; // heading 1, 31.25px
-$TextsizeSmallOne: math.div($TextsizeNormal, $Ratio); // small 1, 12.8px
-$TextsizeSmallTwo: math.div($TextsizeSmallOne, $Ratio); // small 2, 8.192px
-$Textsize: (
-	Normal: $TextsizeNormal,
-	HeadingThree: $TextsizeHeadingThree,
-	HeadingTwo: $TextsizeHeadingTwo,
-	HeadingOne: $TextsizeHeadingOne,
-	SmallOne: $TextsizeSmallOne,
-	SmallTwo: $TextsizeSmallTwo,
+$ratio: 1.25; // ratio
+$textsizeNormal: $fontsize; // normal size, 16px
+$textsizeHeadingThree: $textsizeNormal * $ratio; // heading 3, 20px
+$textsizeHeadingTwo: $textsizeHeadingThree * $ratio; // heading 2, 25px
+$textsizeHeadingOne: $textsizeHeadingTwo * $ratio; // heading 1, 31.25px
+$textsizeSmallOne: math.div($textsizeNormal, $ratio); // small 1, 12.8px
+$textsizeSmallTwo: math.div($textsizeSmallOne, $ratio); // small 2, 8.192px
+$textsize: (
+	Normal: $textsizeNormal,
+	HeadingThree: $textsizeHeadingThree,
+	HeadingTwo: $textsizeHeadingTwo,
+	HeadingOne: $textsizeHeadingOne,
+	SmallOne: $textsizeSmallOne,
+	SmallTwo: $textsizeSmallTwo
 );
 // Styles of fonts - Change for project
-$Megrim: 'Megrim', cursive;
-$Roboto: 'Roboto', sans-serif;
-$Quicksand: 'Quicksand', sans-serif;
+$megrim: 'Megrim', cursive;
+$roboto: 'Roboto', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
 // Line height
-$Lineheight: 1.2;
+$lineHeight: 1.2;
 // Max width
-$Maxwidth: map-get($Breakpoints, 'DT');
+$maxwidth: map-get($breakpoints, 'XD');
 // Rounded size for edge and more
-$Rounded: 8px;
+$rounded: 8px;
 // Size of spaced
-$Spacing: (
+$spacing: (
 	Z: 0,
 	XXS: 8px,
 	XS: 12px,
 	S: 16px,
 	M: 24px,
 	L: 32px,
-	XL: 48px,
+	XL: 48px
 );
 // List of z-index
-$Zindexs: (
+$zindexs: (
 	One: 1000,
 	Two: 2000,
 	Three: 3000,
 	Four: 4000,
-	Five: 5000,
+	Five: 5000
 );
 // Colors palette Change for project
-$Palette: (
+$palette: (
 	Primary: #202e3a,
 	PrimaryLight: #253341,
 	PrimaryDark: #15202b,
@@ -90,10 +90,10 @@ $Palette: (
 	Gray: #b5b5b5,
 	GrayLight: #dbdbdb,
 	GrayDark: #535353,
-	ShadowDark: #0a1015,
+	ShadowDark: #0a1015
 );
 
 // Navbar Height
-$NavbarHeight: 55px;
+$navbarHeight: 55px;
 // Sidenav Width
-$SidenavWidth: 280px;
+$sidenavWidth: 280px;

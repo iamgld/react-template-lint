@@ -5,11 +5,10 @@
 
 	&__layout {
 		width: 100%;
-		// width: calc(100% - styles.$SidenavWidth);
 	}
 
 	&__content {
-		height: calc(100vh - styles.$NavbarHeight);
-		padding: styles.Spacing(M);
+		height: calc(100vh - styles.$navbarHeight);
+		padding: styles.spacing(M);
 	}
 }
