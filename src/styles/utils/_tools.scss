@@ -186,6 +186,15 @@
 @function Zindex($zindex) {
 	@return map-get(setting.$Zindexs, $zindex);
 }
+// Extract a Spacing value
+@function Spacing($Space) {
+	@return map-get(setting.$Spacing, $Space);
+}
+// Extract a Shadow value
+@function Shadow($Shadow) {
+	@return map-get(setting.$Shadows, $Shadow);
+}
+
 // Styles of Scroll Bar on Chrome, Edge y Safari.
 @mixin Scrollbar {
 	// Chrome, Edge y Safari.

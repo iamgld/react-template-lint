@@ -1,0 +1,16 @@
+@use '/src/styles/index.scss' as styles;
+
+.drawer {
+	&,
+	&__paper {
+		width: styles.$SidenavWidth;
+	}
+
+	&__drawer {
+		flex-shrink: 0;
+	}
+
+	&__header {
+		height: styles.$NavbarHeight;
+	}
+}

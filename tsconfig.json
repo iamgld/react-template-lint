@@ -14,7 +14,22 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"baseUrl": "./",
+		"paths": {
+			// App Module
+			"@gld/utils/*": ["src/utils/*"],
+			"@gld/assets/*": ["src/assets/*"],
+			"@gld/hooks": ["src/hooks/index.ts"],
+			"@gld/models": ["src/models/index.ts"],
+			"@gld/contexts": ["src/contexts/index.ts"],
+			"@gld/store": ["src/store/index.ts"],
+			"@gld/services": ["src/services/index.ts"],
+			"@gld/components": ["src/components/index.ts"],
+			"@gld/modules/*": ["src/modules/*"],
+			// Blog Module
+			"@gld/blog/components": ["src/modules/blog/components/index.ts"]
+		}
 	},
 	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]

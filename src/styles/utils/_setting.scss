@@ -10,20 +10,20 @@
 // Size breakpoints
 $Breakpoints: (
 	// zero
-	zr: 0,
+	ZR: 0,
 	// mobile
-	mb: 320px,
+	MB: 320px,
 	// landscape
-	ls: 576px,
+	LS: 576px,
 	// tablet
-	tb: 768px,
+	TB: 768px,
 	// desktop
-	dt: 992px,
+	DT: 992px,
 	// extra desktop
-	xd: 1200px
+	XD: 1280px
 );
 // Fontsize
-$Fontsize: 16px;
+$Fontsize: 14px;
 // Fonts configuration
 $Ratio: 1.25; // ratio
 $TextsizeNormal: $Fontsize; // normal size, 16px
@@ -41,43 +41,59 @@ $Textsize: (
 	SmallTwo: $TextsizeSmallTwo,
 );
 // Styles of fonts - Change for project
+$Megrim: 'Megrim', cursive;
 $Roboto: 'Roboto', sans-serif;
 $Quicksand: 'Quicksand', sans-serif;
 // Line height
 $Lineheight: 1.2;
 // Max width
-$Maxwidth: 1200px;
+$Maxwidth: map-get($Breakpoints, 'DT');
 // Rounded size for edge and more
-$Rounded: 6px;
+$Rounded: 8px;
 // Size of spaced
-$Spaced: 16px;
+$Spacing: (
+	Z: 0,
+	XXS: 8px,
+	XS: 12px,
+	S: 16px,
+	M: 24px,
+	L: 32px,
+	XL: 48px,
+);
 // List of z-index
 $Zindexs: (
-	one: 1000,
-	two: 2000,
-	three: 3000,
-	four: 4000,
-	five: 5000,
+	One: 1000,
+	Two: 2000,
+	Three: 3000,
+	Four: 4000,
+	Five: 5000,
 );
 // Colors palette Change for project
 $Palette: (
-	Primary: #531bba,
-	PrimaryLight: #cba0ff,
-	PrimaryDark: #150132,
-	Accent: #ffa800,
-	AccentLight: #ffc500,
-	AccentDark: #bc791c,
-	Warn: #ff3a2d,
-	WarnLight: #fe294c,
-	WarnDark: #a41a31,
-	Success: #1de9b6,
-	SuccessLight: #64ffda,
-	SuccessDark: #00bfa5,
+	Primary: #202e3a,
+	PrimaryLight: #253341,
+	PrimaryDark: #15202b,
+	Accent: #ffc553,
+	AccentLight: #ffd686,
+	AccentDark: #ec9c00,
+	Warn: #bc366c,
+	WarnLight: #d56d97,
+	WarnDark: #83254b,
+	Success: #579db3,
+	SuccessLight: #89bac9,
+	SuccessDark: #396f80,
+	Orange: #f68169,
+	OrangeLight: #f8a695,
+	OrangeDark: #f24926,
 	Light: #f5f5f5,
 	Dark: #393939,
 	Gray: #b5b5b5,
 	GrayLight: #dbdbdb,
 	GrayDark: #535353,
-	White: #ffffff,
-	Black: #000000,
+	ShadowDark: #0a1015,
 );
+
+// Navbar Height
+$NavbarHeight: 55px;
+// Sidenav Width
+$SidenavWidth: 280px;
